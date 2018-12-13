@@ -1,0 +1,15 @@
+.wa-Chart {
+	svg .line {
+		fill: transparent;
+		stroke: #00f7ad;
+		stroke-width: 10px;
+		stroke-linecap: round;
+		stroke-opacity: 0;
+		stroke-dasharray: 60 940;
+		/* stylelint-disable */
+		animation:
+			dash 10s ease-in-out infinite,
+			dash_opacity 10s ease-in-out infinite;
+		/* stylelint-enable */
+	}
+}

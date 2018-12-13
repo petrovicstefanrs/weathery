@@ -1,0 +1,83 @@
+.wa-ConditionCard {
+	position: relative;
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: radial-gradient(closest-side, #619aa4, #235959, #269191, #269157);
+	background-size: 800% 800%;
+	animation: gradientAnimation 20s ease infinite; /* stylelint-disable-line */
+
+	&-top {
+		width: 100%;
+		display: flex;
+		color: #fff;
+		padding: 15px;
+
+		&-current {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-weight: 400;
+
+			> span:first-child {
+				font-size: 32px;
+				position: relative;
+				margin-right: 4px;
+				margin-right: 10px;
+
+				.fa {
+					font-size: 6px;
+					position: absolute;
+					top: 6px;
+				}
+			}
+
+			> span:nth-child(2) {
+				font-size: 12px;
+				max-width: 80px;
+				display: inline-block;
+			}
+		}
+
+		&-icon {
+			width: 100px;
+			position: absolute;
+			top: -10px;
+			right: -15px;
+			fill: #fff;
+			stroke-width: 2px;
+			stroke: #fff;
+		}
+	}
+
+	&-bottom {
+		z-index: 1;
+		color: #ffffff;
+		padding: 15px;
+		display: flex;
+		align-items: center;
+
+		&-updatedAt {
+			font-size: 10px;
+			font-weight: 700;
+			margin-left: 10px;
+		}
+
+		.fa {
+			cursor: pointer;
+		}
+	}
+
+	.wa-Chart {
+		opacity: 0.8;
+		z-index: 0;
+		width: 100%;
+		position: absolute;
+		bottom: -20px;
+		left: 0;
+		right: 0;
+	}
+}

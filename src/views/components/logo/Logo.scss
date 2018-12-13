@@ -1,0 +1,31 @@
+.wa-Logo {
+	font-size: 10px;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+	&-circle {
+		width: 20px;
+		height: 20px;
+		display: inline-block;
+		border-radius: 50%;
+		background: #b590e1;
+
+		&:not(:first-child) {
+			margin-left: -5px;
+		}
+
+		&:nth-child(2) {
+			background: #77c7e6;
+		}
+
+		&:nth-child(3) {
+			background: #dfdc9b;
+		}
+	}
+
+	&-name {
+		margin-left: 10px;
+	}
+}

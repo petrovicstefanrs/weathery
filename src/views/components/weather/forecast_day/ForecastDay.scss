@@ -1,0 +1,52 @@
+.wa-ForecastDay {
+	width: calc(100% / 7);
+	color: #fff;
+	font-size: 10px;
+	height: 130px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 5px;
+	padding-bottom: 10px;
+	background: linear-gradient(to top, rgba(0,0,0,1) 0%,rgba(255,255,255,0) 100%);
+	cursor: pointer;
+	transition: all 0.3s ease-in;
+	overflow: hidden;
+
+	.wa-Icon {
+		width: 100%;
+		margin-top: -5px;
+		transition: all 0.3s ease-in;
+
+		svg {
+			fill: #ffffff;
+		}
+	}
+
+	&-temp {
+		font-size: 16px;
+		position: relative;
+		margin-left: -3px;
+
+		.fa {
+			font-size: 4px;
+			position: absolute;
+			top: 3px;
+		}
+	}
+
+	&-day {
+		margin-top: auto;
+		text-transform: uppercase;
+		font-weight: 400;
+	}
+
+	&:hover {
+		height: 150px;
+
+		.wa-Icon {
+			transform: scale(1.3);
+		}
+	}
+}

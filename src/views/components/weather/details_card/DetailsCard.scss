@@ -1,0 +1,76 @@
+.wa-DetailsCard {
+	position: relative;
+	overflow: hidden;
+	width: 200px;
+	height: 130px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: radial-gradient(closest-side, #61a46c, #23592f, #26913d, #26918c);
+	background-size: 800% 800%;
+	animation: gradientAnimation 20s ease infinite; /* stylelint-disable-line */
+
+	&-top {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		color: #fff;
+		padding: 15px;
+
+		> span {
+			display: inline-block;
+			font-size: 16px;
+			line-height: 14px;
+
+			&:first-child {
+				width: 60%;
+			}
+
+			&:nth-child(2) {
+				width: 40%;
+			}
+
+			> span:nth-child(3) {
+				font-size: 10px !important;
+				font-weight: 300;
+			}
+		}
+	}
+
+	&-bottom {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		color: #fff;
+		padding: 15px;
+
+		> span {
+			display: inline-block;
+			font-size: 16px;
+			line-height: 14px;
+
+			&:first-child {
+				width: 60%;
+			}
+
+			&:nth-child(2) {
+				width: 40%;
+			}
+
+			> span:nth-child(3) {
+				font-size: 10px !important;
+				font-weight: 300;
+			}
+		}
+	}
+
+	.wa-Chart {
+		opacity: 0.8;
+		z-index: 0;
+		width: 100%;
+		position: absolute;
+		bottom: -20px;
+		left: 0;
+		right: 0;
+	}
+}
