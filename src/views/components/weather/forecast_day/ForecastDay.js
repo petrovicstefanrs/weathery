@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import FontAwesome from 'react-fontawesome';
 
-import Icon from '../../icon';
+import WeatherIcon from '../../weather_icon';
 
 import FA from '../../../../lib/font_awesome';
 import {WEATHER_CODE_TO_ICO} from '../../../../lib/icons_lib';
@@ -34,7 +34,7 @@ class ForecastDay extends Component {
 
 		return (
 			<React.Fragment>
-				<Icon className={`${CLASS}-icon`} icon={WEATHER_CODE_TO_ICO[code]} />
+				<WeatherIcon className={`${CLASS}-icon`} icon={WEATHER_CODE_TO_ICO[code]} />
 				<span className={`${CLASS}-temp`}>
 					{avgtemp_c}
 					<FontAwesome name={FA.circle} />

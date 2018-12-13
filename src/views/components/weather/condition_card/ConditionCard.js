@@ -5,7 +5,7 @@ import {connect} from 'react-redux';
 
 import ContentWrapper from '../../content_wrapper';
 import Chart from '../../chart';
-import Icon from '../../icon';
+import WeatherIcon from '../../weather_icon';
 import TimeAgo from '../../time_ago';
 
 import {WEATHER_CODE_TO_ICO} from '../../../../lib/icons_lib';
@@ -47,7 +47,7 @@ class ConditionCard extends Component {
 					</span>
 					<span>{text}</span>
 				</div>
-				<Icon className={`${CLASS}-top-icon`} icon={WEATHER_CODE_TO_ICO[code]} />
+				<WeatherIcon className={`${CLASS}-top-icon`} icon={WEATHER_CODE_TO_ICO[code]} />
 			</div>
 		);
 	};
